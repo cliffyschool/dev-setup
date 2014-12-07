@@ -19,6 +19,7 @@ wget -O /tmp/intellij.tar.gz http://download.jetbrains.com/idea/ideaIC-14.0.1.ta
 tar xfz /tmp/intellij.tar.gz 
 
 
+
 ##
 ## Setup the Solarized Dark theme for gnome-terminal
 ##
@@ -26,7 +27,16 @@ gtcbin="`(mktemp -d)`/solarize"
 git clone https://github.com/sigurdga/gnome-terminal-colors-solarized.git "`(dirname \"$gtcbin\")`"
 "$gtcbin" dark
 
- 
+# Unity Look and Feel
+sudo add-apt-repository ppa:numix/ppa
+sudo apt-get update
+sudo apt-get install numix-gtk-theme numix-icon-theme-circle
+sudo apt-get install numix-wallpaper-*
+sudo apt-get install unity-tweak-tool
+
+# Cisco/VPN
+sudo apt-get install network-manager-openconnect
+
 ##
 ## Setup Prezto
 ##
