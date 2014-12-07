@@ -21,6 +21,10 @@ do
     bindkey -M $keymap '^E' end-of-line
     # Ctrl-K deletes from the cursor to the end of the line
     bindkey -M $keymap '^K' kill-line
+    # [Ctrl-RightArrow] - move forward one word
+    bindkey -M $keymap '^[[1;5C' forward-word
+    # [Ctrl-LeftArrow] - move backward one word
+    bindkey -M $keymap '^[[1;5D' backward-word
 done
 
 # aliases
