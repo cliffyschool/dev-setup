@@ -122,6 +122,8 @@ mv "$HOME/Ubuntu One/" "$HOME/Ubuntu One Backup/"
 
 sudo apt-get remove -y --purge 'ubuntuone-*'
 
+# Other utils
+sudo apt-get install clusterssh
 
 ##
 ## And to finish it, a dist-upgrade to install/update them all.
