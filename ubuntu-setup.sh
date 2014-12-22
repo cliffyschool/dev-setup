@@ -63,9 +63,12 @@ git clone http://github.com/tlazaro/vim-scala-setup ~/.vim
 ln -s ~/.vim/vimrc ~/.vimrc
 cd ~/.vim
 git submodule update --init
- 
+
+# Install Airline
+git clone https://github.com/bling/vim-airline ~/.vim/bundle/vim-airline
+
 #git clone --recursive https://github.com/ravishi/dotvim "$HOME/.vim"
- 
+
 # powerline fancy symbols
 mkdir -p "$HOME/.fonts/" "$HOME/.config/fontconfig/conf.d/"
 wget -P "$HOME/.fonts/" https://github.com/Lokaltog/powerline/raw/develop/font/PowerlineSymbols.otf
@@ -123,7 +126,7 @@ mv "$HOME/Ubuntu One/" "$HOME/Ubuntu One Backup/"
 sudo apt-get remove -y --purge 'ubuntuone-*'
 
 # Other utils
-sudo apt-get install clusterssh
+sudo apt-get install clusterssh gitg pidgin
 
 ##
 ## And to finish it, a dist-upgrade to install/update them all.
