@@ -1,3 +1,4 @@
 #!/bin/sh
+
 xinput set-prop 15 "Device Enabled" 0
 
