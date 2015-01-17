@@ -1,2 +1,2 @@
 #!/bin/sh
-sudo apt-get install nodejs npm
+sudo apt-get install nodejs-legacy npm
