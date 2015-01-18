@@ -33,7 +33,8 @@ alias ..='cd ..'
 alias ...='cd ../../'
 alias ....='cd ../../../'
 alias .....='cd ../../../../'
-
+alias ds='cd ~/dev/dev-setup'
+alias dellsux='~/dev/dev-setup/config/hardware/disableStupidDellTouchpad.sh'
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 export PATH="$PATH:/usr/local/git-tf" # Git TF
