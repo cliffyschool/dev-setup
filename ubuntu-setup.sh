@@ -125,6 +125,9 @@ mv "$HOME/Ubuntu One/" "$HOME/Ubuntu One Backup/"
 
 sudo apt-get remove -y --purge 'ubuntuone-*'
 
+# Docker
+sudo apt-get install docker.io
+
 # Other utils
 sudo apt-get install clusterssh gitg pidgin
 
