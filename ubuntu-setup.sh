@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash
 
 # Copied from here: https://gist.githubusercontent.com/ravishi/3706813/raw/624016914feadf43c210df5e7bb5b0297af7d0ce/ubuntu-post-install.sh
 
