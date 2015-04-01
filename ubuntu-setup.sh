@@ -15,7 +15,7 @@ sudo apt-get -y install oracle-java8-installer
 update-java-alternatives -s java-8-oracle
 
 # Install Intellij
-wget -O /tmp/intellij.tar.gz http://download.jetbrains.com/idea/ideaIC-14.0.1.tar.gz 
+wget -O /tmp/intellij.tar.gz http://download.jetbrains.com/idea/ideaIC-14.1.1.tar.gz 
 tar xfz /tmp/intellij.tar.gz 
 
 
