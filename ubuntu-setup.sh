@@ -132,7 +132,7 @@ sudo apt-get remove -y --purge 'ubuntuone-*'
 sudo apt-get -y install docker.io
 
 # Other utils
-sudo apt-get -y install clusterssh gitg pidgin
+sudo apt-get -y install clusterssh gitg pidgin tmux
 
 ##
 ## And to finish it, a dist-upgrade to install/update them all.
