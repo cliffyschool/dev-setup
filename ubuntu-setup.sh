@@ -118,7 +118,7 @@ mv "$HOME/Ubuntu One/" "$HOME/Ubuntu One Backup/"
 sudo apt-get remove -y --purge 'ubuntuone-*'
 
 # Other utils
-sudo apt-get -y install clusterssh gitg pidgin rdesktop network-manager-openconnect \
+sudo apt-get -y install clusterssh gitg tmux pidgin rdesktop network-manager-openconnect \
   docker.io curl
 
 ##
