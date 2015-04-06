@@ -1,9 +1,3 @@
-#
-# Executes commands at the start of an interactive session.
-#
-# Authors:
-#   Sorin Ionescu <sorin.ionescu@gmail.com>
-#
 
 # Source Prezto.
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
@@ -35,6 +29,7 @@ alias ....='cd ../../../'
 alias .....='cd ../../../../'
 alias ds='cd ~/dev/dev-setup'
 alias dellsux='~/dev/dev-setup/config/hardware/disableStupidDellTouchpad.sh'
+alias proxy='export http_proxy=http://www-proxy.us.oracle.com:80;export HTTPS_PROXY=$http_proxy;export HTTP_PROXY=$http_proxy;export FTP_PROXY=$http_proxy;export https_proxy=$http_proxy;export ftp_proxy=$http_proxy;'
+alias noproxy='unset http_proxy;unset HTTPS_PROXY;unset HTTP_PROXY;unset FTP_PROXY;unset https_proxy;unset ftp_proxy'
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-export PATH="$PATH:/usr/local/git-tf" # Git TF
+rdp() { rdesktop -d oradev -u cbfreema -p - -k en-us -a 16 -z -g 1366x768 -5 -P $1 }

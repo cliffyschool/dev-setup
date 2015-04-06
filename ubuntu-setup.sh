@@ -34,12 +34,6 @@ sudo apt-get -y install numix-gtk-theme numix-icon-theme-circle
 sudo apt-get -y install numix-wallpaper-*
 sudo apt-get -y install unity-tweak-tool
 
-# Cisco/VPN
-sudo apt-get install network-manager-openconnect
-
-#curl 
-sudo apt-get install curl
-
 ##
 ## Setup Prezto
 ##
@@ -103,11 +97,6 @@ sudo apt-get install -y --force-yes google-chrome-beta
 # disable global Super+P shortcut, which conflicts with XMonads Super+P
 #dconf write /org/gnome/settings-daemon/plugins/xrandr/active false
 
-
-##
-## Misc stuff
-##
-
 # Better font rendering (aka Infinality)
 # source: http://www.webupd8.org/2013/06/better-font-rendering-in-linux-with.html
 sudo add-apt-repository -y ppa:no1wantdthisname/ppa \
@@ -128,11 +117,9 @@ mv "$HOME/Ubuntu One/" "$HOME/Ubuntu One Backup/"
 
 sudo apt-get remove -y --purge 'ubuntuone-*'
 
-# Docker
-sudo apt-get -y install docker.io
-
 # Other utils
-sudo apt-get -y install clusterssh gitg pidgin
+sudo apt-get -y install clusterssh gitg pidgin rdesktop network-manager-openconnect \
+  docker.io curl
 
 ##
 ## And to finish it, a dist-upgrade to install/update them all.
