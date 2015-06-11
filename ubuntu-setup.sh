@@ -63,6 +63,8 @@ git submodule update --init
 
 # Install Airline
 git clone https://github.com/bling/vim-airline ~/.vim/bundle/vim-airline
+# vim-gradle
+git clone https://github.com/tfnico/vim-gradle ~/.vim/bundle/vim-gradle
 
 #git clone --recursive https://github.com/ravishi/dotvim "$HOME/.vim"
 
