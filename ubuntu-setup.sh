@@ -18,7 +18,10 @@ update-java-alternatives -s java-8-oracle
 wget -O /tmp/intellij.tar.gz http://download.jetbrains.com/idea/ideaIC-14.1.1.tar.gz 
 tar xfz /tmp/intellij.tar.gz 
 
-
+# sbt
+echo "deb http://dl.bintray.com/sbt/debian /" | sudo tee -a /etc/apt/sources.list.d/sbt.list
+sudo apt-get update
+sudo apt-get install sbt
 
 ##
 ## Setup the Solarized Dark theme for gnome-terminal
