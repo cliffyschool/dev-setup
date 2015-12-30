@@ -1,0 +1,63 @@
+[submodule "dotfiles/vim/bundle/vim-sensible"]
+	path = dotfiles/vim/bundle/vim-sensible
+	url = https://github.com/tpope/vim-sensible.git
+[submodule "dotfiles/vim/bundle/command-t"]
+	path = dotfiles/vim/bundle/command-t
+	url = https://github.com/wincent/command-t.git
+[submodule "dotfiles/vim/bundle/supertab"]
+	path = dotfiles/vim/bundle/supertab
+	url = https://github.com/ervandew/supertab.git
+[submodule "dotfiles/vim/bundle/vim-easymotion"]
+	path = dotfiles/vim/bundle/vim-easymotion
+	url = https://github.com/Lokaltog/vim-easymotion.git
+[submodule "dotfiles/vim/bundle/numbers"]
+	path = dotfiles/vim/bundle/numbers
+	url = https://github.com/myusuf3/numbers.vim.git
+[submodule "dotfiles/vim/bundle/vim-scala"]
+	path = dotfiles/vim/bundle/vim-scala
+	url = https://github.com/derekwyatt/vim-scala.git
+[submodule "dotfiles/vim/bundle/rainbow_parentheses"]
+	path = dotfiles/vim/bundle/rainbow_parentheses
+	url = https://github.com/kien/rainbow_parentheses.vim.git
+[submodule "dotfiles/vim/bundle/vim-indent-guides"]
+	path = dotfiles/vim/bundle/vim-indent-guides
+	url = https://github.com/nathanaelkane/vim-indent-guides.git
+[submodule "dotfiles/vim/bundle/zoomwin"]
+	path = dotfiles/vim/bundle/zoomwin
+	url = https://github.com/vim-scripts/ZoomWin.git
+[submodule "dotfiles/vim/bundle/bufexplorer"]
+	path = dotfiles/vim/bundle/bufexplorer
+	url = https://github.com/corntrace/bufexplorer.git
+[submodule "dotfiles/vim/bundle/nerdtree"]
+	path = dotfiles/vim/bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
+[submodule "dotfiles/vim/bundle/tagbar"]
+	path = dotfiles/vim/bundle/tagbar
+	url = https://github.com/majutsushi/tagbar.git
+[submodule "dotfiles/vim/bundle/vim-fugitive"]
+	path = dotfiles/vim/bundle/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule "dotfiles/vim/bundle/vim-gitgutter"]
+	path = dotfiles/vim/bundle/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter.git
+[submodule "dotfiles/vim/bundle/vim-powerline"]
+	path = dotfiles/vim/bundle/vim-powerline
+	url = https://github.com/Lokaltog/vim-powerline.git
+[submodule "dotfiles/vim/bundle/vim-surround"]
+	path = dotfiles/vim/bundle/vim-surround
+	url = https://github.com/tpope/vim-surround.git
+[submodule "dotfiles/vim/bundle/sbt-vim"]
+	path = dotfiles/vim/bundle/sbt-vim
+	url = https://github.com/ktvoelker/sbt-vim.git
+[submodule "dotfiles/vim/bundle/powerline"]
+	path = dotfiles/vim/bundle/powerline
+	url = https://github.com/Lokaltog/powerline.git
+[submodule "dotfiles/vim/bundle/vim-gradle"]
+	path = dotfiles/vim/bundle/vim-gradle
+	url = https://github.com/tfnico/vim-gradle.git
+[submodule "dotfiles/vim/bundle/numbers.vim"]
+	path = dotfiles/vim/bundle/numbers.vim
+	url = https://github.com/myusuf3/numbers.vim.git
+[submodule "dotfiles/vim/bundle/ZoomWin"]
+	path = dotfiles/vim/bundle/ZoomWin
+	url = https://github.com/vim-scripts/ZoomWin.git
