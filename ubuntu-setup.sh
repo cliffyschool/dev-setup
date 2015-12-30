@@ -58,18 +58,8 @@ sudo usermod -s /bin/zsh "$(whoami)"
 ## 
 ## Setup VIM
 ##
-sudo apt-get install -y vim-gnome 
-git clone http://github.com/tlazaro/vim-scala-setup ~/.vim
-ln -s ~/.vim/vimrc ~/.vimrc
-cd ~/.vim
+ln -s dotfiles/vim/vimrc ~/.vimrc
 git submodule update --init
-
-# Install Airline
-git clone https://github.com/bling/vim-airline ~/.vim/bundle/vim-airline
-# vim-gradle
-git clone https://github.com/tfnico/vim-gradle ~/.vim/bundle/vim-gradle
-
-#git clone --recursive https://github.com/ravishi/dotvim "$HOME/.vim"
 
 # powerline fancy symbols
 mkdir -p "$HOME/.fonts/" "$HOME/.config/fontconfig/conf.d/"
@@ -131,4 +121,3 @@ sudo apt-get -y install clusterssh gitg tmux pidgin rdesktop network-manager-ope
 ##
 sudo apt-get update && sudo apt-get dist-upgrade -y
  
-# vim: set tw=0:
