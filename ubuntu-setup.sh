@@ -41,11 +41,10 @@ sudo apt-get -y install unity-tweak-tool
 ## Setup Prezto
 ##
 sudo apt-get install -y git zsh
- 
-git clone --recursive https://github.com/ravishi/prezto.git "$HOME/.zprezto"
+git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto" 
  
 shopt -s extglob
-for rcfile in $HOME/.zprezto/runcoms/!(README.md); do
+for rcfile in dotfiles/zsh/z*; do
   ln -s "$rcfile" "$HOME/.$(basename $rcfile)"
 done
  
