@@ -40,9 +40,6 @@
 [submodule "dotfiles/vim/bundle/vim-gitgutter"]
 	path = dotfiles/vim/bundle/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter.git
-[submodule "dotfiles/vim/bundle/vim-powerline"]
-	path = dotfiles/vim/bundle/vim-powerline
-	url = https://github.com/Lokaltog/vim-powerline.git
 [submodule "dotfiles/vim/bundle/vim-surround"]
 	path = dotfiles/vim/bundle/vim-surround
 	url = https://github.com/tpope/vim-surround.git
@@ -61,3 +58,9 @@
 [submodule "dotfiles/vim/bundle/ZoomWin"]
 	path = dotfiles/vim/bundle/ZoomWin
 	url = https://github.com/vim-scripts/ZoomWin.git
+[submodule "dotfiles/vim/bundle/vim-airline"]
+	path = dotfiles/vim/bundle/vim-airline
+	url = https://github.com/bling/vim-airline.git
+[submodule "dotfiles/vim/bundle/vim-colors-solarized"]
+	path = dotfiles/vim/bundle/vim-colors-solarized
+	url = https://github.com/altercation/vim-colors-solarized.git

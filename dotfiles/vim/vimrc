@@ -17,9 +17,12 @@ set listchars=tab:-\ ,eol:¬
 highlight NonText guifg=#4a4a59
 highlight SpecialKey guifg=#4a4a59
 
-" create a bar for airline
+" powerline configuration
+set encoding=utf-8
+let g:Powerline_symbols = 'fancy'
+set guifont=Inconsolata\ For\ Powerline
+set rtp+=/usr/local/lib/python2.7/dist-packages/Powerline-beta-py2.7.egg/powerline/bindings/vim/
 set laststatus=2
-let g:airline_powerline_fonts = 1 
 
 " ctags
 set tags=tags;/
@@ -54,10 +57,10 @@ autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 
 " Solarized
-syntax on
+syntax enable
 set background=dark
 let g:solarized_termcolors = 256
-colorscheme desert
+colorscheme koehler
 
 " leader key
 let mapleader = ','
