@@ -15,7 +15,7 @@ sudo apt-get -y install oracle-java8-installer
 update-java-alternatives -s java-8-oracle
 
 # Install Intellij
-wget -O /tmp/intellij.tar.gz http://download.jetbrains.com/idea/ideaIC-14.1.1.tar.gz 
+wget -O /tmp/intellij.tar.gz http://download.jetbrains.com/idea/ideaIC-14.1.4.tar.gz 
 tar xfz /tmp/intellij.tar.gz 
 
 # sbt
@@ -41,11 +41,10 @@ sudo apt-get -y install unity-tweak-tool
 ## Setup Prezto
 ##
 sudo apt-get install -y git zsh
- 
-git clone --recursive https://github.com/ravishi/prezto.git "$HOME/.zprezto"
+git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto" 
  
 shopt -s extglob
-for rcfile in $HOME/.zprezto/runcoms/!(README.md); do
+for rcfile in dotfiles/zsh/z*; do
   ln -s "$rcfile" "$HOME/.$(basename $rcfile)"
 done
  
@@ -58,18 +57,8 @@ sudo usermod -s /bin/zsh "$(whoami)"
 ## 
 ## Setup VIM
 ##
-sudo apt-get install -y vim-gnome 
-git clone http://github.com/tlazaro/vim-scala-setup ~/.vim
-ln -s ~/.vim/vimrc ~/.vimrc
-cd ~/.vim
+ln -s dotfiles/vim/vimrc ~/.vimrc
 git submodule update --init
-
-# Install Airline
-git clone https://github.com/bling/vim-airline ~/.vim/bundle/vim-airline
-# vim-gradle
-git clone https://github.com/tfnico/vim-gradle ~/.vim/bundle/vim-gradle
-
-#git clone --recursive https://github.com/ravishi/dotvim "$HOME/.vim"
 
 # powerline fancy symbols
 mkdir -p "$HOME/.fonts/" "$HOME/.config/fontconfig/conf.d/"
@@ -131,4 +120,3 @@ sudo apt-get -y install clusterssh gitg tmux pidgin rdesktop network-manager-ope
 ##
 sudo apt-get update && sudo apt-get dist-upgrade -y
  
-# vim: set tw=0:
