@@ -31,6 +31,8 @@ alias ds='cd ~/dev/dev-setup'
 alias dellsux='~/dev/dev-setup/config/hardware/disableStupidDellTouchpad.sh'
 alias proxy='export http_proxy=http://www-proxy.us.oracle.com:80;export HTTPS_PROXY=$http_proxy;export HTTP_PROXY=$http_proxy;export FTP_PROXY=$http_proxy;export https_proxy=$http_proxy;export ftp_proxy=$http_proxy;'
 alias noproxy='unset http_proxy;unset HTTPS_PROXY;unset HTTP_PROXY;unset FTP_PROXY;unset https_proxy;unset ftp_proxy'
-alias gdd='git difftool develop'
+alias gdd='git difftool develop --no-prompt'
+alias j6='sudo update-java-alternatives -s java-6-oracle'
+alias j8='sudo update-java-alternatives -s java-8-oracle'
 
 rdp() { rdesktop -d oradev -u cbfreema -p - -k en-us -a 16 -z -g 1366x768 -5 -P $1 }
