@@ -36,3 +36,7 @@ alias j6='sudo update-java-alternatives -s java-6-oracle'
 alias j8='sudo update-java-alternatives -s java-8-oracle'
 
 rdp() { rdesktop -d oradev -u cbfreema -p - -k en-us -a 16 -z -g 1366x768 -5 -P $1 }
+
+# prepend a space to the beginning of all .java files modified int the most recent x commits
+# This makes it easy to find files to reformat in IntelliJ
+touchRecent() {git diff --name-only HEAD~$1 | grep java | xargs sed -i '1s;^; ;'}
