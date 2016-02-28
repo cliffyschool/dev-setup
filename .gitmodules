@@ -64,3 +64,6 @@
 [submodule "dotfiles/vim/bundle/vim-colors-solarized"]
 	path = dotfiles/vim/bundle/vim-colors-solarized
 	url = https://github.com/altercation/vim-colors-solarized.git
+[submodule "dotfiles/vim/bundle/ctrlp.vim"]
+	path = dotfiles/vim/bundle/ctrlp.vim
+	url = https://github.com/ctrlpvim/ctrlp.vim.git
