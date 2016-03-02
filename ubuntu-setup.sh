@@ -60,12 +60,10 @@ sudo usermod -s /bin/zsh "$(whoami)"
 ln -s dotfiles/vim/vimrc ~/.vimrc
 git submodule update --init
 
-# powerline fancy symbols
-mkdir -p "$HOME/.fonts/" "$HOME/.config/fontconfig/conf.d/"
-wget -P "$HOME/.fonts/" https://github.com/Lokaltog/powerline/raw/develop/font/PowerlineSymbols.otf
-fc-cache -vf "$HOME/.fonts"
-wget -P "$HOME/.config/fontconfig/conf.d/" https://github.com/Lokaltog/powerline/raw/develop/font/10-powerline-symbols.conf
-
+# Patched fonts w/ symbols for Powerline/Airline
+git clone https://github.com/powerline/fonts.git
+./fonts/install.sh
+rm -rf fonts
 
 ##
 ## Google Chrome

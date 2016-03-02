@@ -8,21 +8,21 @@ syntax on
 
 " Shortcut to rapidly toggle `set list`
 nmap <leader>l :set list!<CR>
-
 " Use the same symbols as TextMate for tabstops and EOLs
-" set listchars=tab:▸\ ,eol:¬
 set listchars=tab:-\ ,eol:¬
 
 "Invisible character colors 
 highlight NonText guifg=#4a4a59
 highlight SpecialKey guifg=#4a4a59
 
-" powerline configuration
-set encoding=utf-8
-let g:Powerline_symbols = 'fancy'
 set guifont=Inconsolata\ For\ Powerline
-set rtp+=/usr/local/lib/python2.7/dist-packages/Powerline-beta-py2.7.egg/powerline/bindings/vim/
-set laststatus=2
+
+" air-line
+let g:airline_powerline_fonts = 1
+
+if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+endif
 
 " ctags
 set tags=tags;/
@@ -56,11 +56,12 @@ autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 
-" Solarized
 syntax enable
-set background=dark
-let g:solarized_termcolors = 256
+"set background=dark
 colorscheme koehler
+
+" Solarized
+"let g:solarized_termcolors = 256
 
 " leader key
 let mapleader = ','
@@ -256,9 +257,6 @@ autocmd! FileType qf nnoremap <buffer> <leader><Enter> <C-w><Enter><C-w>L
 
 " When the page starts to scroll, keep the cursor 8 lines from the top and 8 lines from the bottom
 set scrolloff=8
-
-" ZoomWin
-nmap <leader>o <c-w>o
 
 " CtrlP
 set runtimepath^=~/.vim/bundle/ctrlp.vim
