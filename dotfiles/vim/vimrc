@@ -249,8 +249,8 @@ endif
 nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 
 " bind \ (backward slash) to grep shortcut
-command -nargs=+ -complete=file -bar Ag silent! grep! <args>|cwindow|redraw!
-nnoremap \ :Ag<SPACE>
+"command -nargs=+ -complete=file -bar Ag silent! grep! <args>|cwindow|redraw!
+"nnoremap \ :Ag<SPACE>
 
 " http://stackoverflow.com/questions/16743112/open-item-from-quickfix-window-in-vertical-split
 autocmd! FileType qf nnoremap <buffer> <leader><Enter> <C-w><Enter><C-w>L
@@ -262,3 +262,6 @@ set scrolloff=8
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
+
+" Insert a dashless UUID in insert mode
+inoremap <C-g> <C-R>=system("uuidgen \| sed s/-//g")[0:-2]<CR>
