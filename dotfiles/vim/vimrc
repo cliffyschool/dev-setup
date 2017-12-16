@@ -1,7 +1,7 @@
 " set shell=/bin/sh
 
 " pathogen
-" execute pathogen#infect()
+"execute pathogen#infect()
 execute pathogen#infect('bundle/{}', '~/vim_local/{}')
 syntax on
 "filetype plugin indent on
