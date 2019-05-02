@@ -33,6 +33,7 @@ alias proxy='export http_proxy=http://www-proxy.us.oracle.com:80;export HTTPS_PR
 alias noproxy='unset http_proxy;unset HTTPS_PROXY;unset HTTP_PROXY;unset FTP_PROXY;unset https_proxy;unset ftp_proxy'
 alias gdd='git difftool develop --no-prompt'
 alias gdn='git difftool --noprompt'
+alias gdno='git difftool develop --name-only'
 alias j6='sudo update-java-alternatives -s java-6-oracle'
 alias j8='sudo update-java-alternatives -s java-8-oracle'
 
