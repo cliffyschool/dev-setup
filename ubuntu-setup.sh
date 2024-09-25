@@ -57,7 +57,7 @@ sudo usermod -s /bin/zsh "$(whoami)"
 ## 
 ## Setup VIM
 ##
-ln -s dotfiles/vim/vimrc ~/.vimrc
+ln -s dotfiles/vim/ ~/.vim
 git submodule update --init
 
 # Patched fonts w/ symbols for Powerline/Airline

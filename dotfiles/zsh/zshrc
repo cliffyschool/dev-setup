@@ -28,13 +28,16 @@ alias ...='cd ../../'
 alias ....='cd ../../../'
 alias .....='cd ../../../../'
 alias ds='cd ~/dev/dev-setup'
+alias gco='git checkout'
 alias gdd='git difftool develop --no-prompt'
+alias gdm='git difftool master --no-prompt'
 alias gdn='git difftool --no-prompt'
-alias gdno='git difftool develop --name-only'
+alias gddno='git difftool develop --name-only'
+alias gdh1='git difftool HEAD~1 --no-prompt'
 alias j8='jenv global 1.8'
 
 # prepend a space to the beginning of all .java files modified int the most recent x commits
 # This makes it easy to find files to reformat in IntelliJ
-touchRecent() {git diff --name-only HEAD~$1 | grep java | xargs sed -i '1s;^; ;'}
+touchRecent() {git diff --name-only HEAD~$1 | grep java | xargs sed -i '' '1s;^; ;'}
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"

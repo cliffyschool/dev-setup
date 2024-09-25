@@ -15,7 +15,7 @@ set listchars=tab:-\ ,eol:¬
 highlight NonText guifg=#4a4a59
 highlight SpecialKey guifg=#4a4a59
 
-set guifont=Inconsolata\ For\ Powerline
+set guifont=Droid\ Sans\ Mono
 
 " air-line
 let g:airline_powerline_fonts = 1
@@ -23,6 +23,31 @@ let g:airline_powerline_fonts = 1
 if !exists('g:airline_symbols')
     let g:airline_symbols = {}
 endif
+
+" unicode symbols
+let g:airline_left_sep = '»'
+let g:airline_left_sep = '▶'
+let g:airline_right_sep = '«'
+let g:airline_right_sep = '◀'
+let g:airline_symbols.linenr = '␊'
+let g:airline_symbols.linenr = '␤'
+let g:airline_symbols.linenr = '¶'
+let g:airline_symbols.branch = '⎇'
+let g:airline_symbols.paste = 'ρ'
+let g:airline_symbols.paste = 'Þ'
+let g:airline_symbols.paste = '∥'
+let g:airline_symbols.whitespace = 'Ξ'
+
+
+
+" airline symbols
+let g:airline_left_sep = ''
+let g:airline_left_alt_sep = ''
+let g:airline_right_sep = ''
+let g:airline_right_alt_sep = ''
+let g:airline_symbols.branch = ''
+let g:airline_symbols.readonly = ''
+let g:airline_symbols.linenr = ''
 
 " ctags
 set tags=tags;/
@@ -227,8 +252,8 @@ function! Uncomment()
   endif
 endfunction
 
-map <C-a> :call Comment()<CR>
-map <C-b> :call Uncomment()<CR>
+"map <C-a> :call Comment()<CR>
+"map <C-b> :call Uncomment()<CR>
 
 " colorcolumn / print margin
 :set colorcolumn=120
