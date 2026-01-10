@@ -18,7 +18,7 @@ highlight SpecialKey guifg=#4a4a59
 set guifont=Droid\ Sans\ Mono
 
 " air-line
-let g:airline_powerline_fonts = 1
+let g:airline_powerline_fonts = 0
 
 if !exists('g:airline_symbols')
     let g:airline_symbols = {}
@@ -82,8 +82,8 @@ autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 
 syntax enable
-"set background=dark
-colorscheme koehler
+set background=dark
+colorscheme slate
 
 " Solarized
 "let g:solarized_termcolors = 256

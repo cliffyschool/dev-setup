@@ -54,16 +54,24 @@ done
 sudo usermod -s /bin/zsh "$(whoami)"
  
  
-## 
+##
 ## Setup VIM
 ##
 ln -s dotfiles/vim/ ~/.vim
+ln -s dotfiles/vim/vimrc ~/.vimrc
 git submodule update --init
 
 # Patched fonts w/ symbols for Powerline/Airline
 git clone https://github.com/powerline/fonts.git
 ./fonts/install.sh
 rm -rf fonts
+
+##
+## Setup Claude Code
+##
+mkdir -p ~/.claude
+ln -s dotfiles/claude/settings.json ~/.claude/settings.json
+ln -s dotfiles/claude/statusline-command.sh ~/.claude/statusline-command.sh
 
 ##
 ## Google Chrome
