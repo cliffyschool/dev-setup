@@ -15,10 +15,10 @@ set listchars=tab:-\ ,eol:¬
 highlight NonText guifg=#4a4a59
 highlight SpecialKey guifg=#4a4a59
 
-set guifont=Droid\ Sans\ Mono
+set guifont=Inconsolata\ for\ Powerline:h14
 
 " air-line
-let g:airline_powerline_fonts = 0
+let g:airline_powerline_fonts = 1
 
 if !exists('g:airline_symbols')
     let g:airline_symbols = {}
@@ -83,7 +83,7 @@ autocmd BufWinLeave * call clearmatches()
 
 syntax enable
 set background=dark
-colorscheme slate
+colorscheme desert
 
 " Solarized
 "let g:solarized_termcolors = 256
